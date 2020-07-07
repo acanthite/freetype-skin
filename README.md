@@ -13,7 +13,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.acanthite:freetype-skin:0.1-SNAPSHOT'
+    implementation 'com.github.acanthite:freetype-skin:0.2'
 }
 ```
 
@@ -52,7 +52,7 @@ If you want to use it with `AssetManager` you need to replace the default asset 
 AssetManager manager = new AssetManager();
 
 // replace the builtin skin loader with FreeTypeSkinLoader
-manager.setLoader(Skin.class, new FreeTypeSkinLoader());
+manager.setLoader(Skin.class, new FreeTypeSkinLoader(manager.getFileHandleResolver()));
 
 // queue skin loading
 manager.load(Skin.class, "assets/uiskin.json");
