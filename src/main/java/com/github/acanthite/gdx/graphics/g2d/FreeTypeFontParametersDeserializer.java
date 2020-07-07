@@ -50,7 +50,7 @@ class FreeTypeFontParametersDeserializer extends Json.ReadOnlySerializer<FreeTyp
 
         param.kerning = json.readValue("kerning", boolean.class, param.kerning, jsonData);
 
-        param.flip = json.readValue("genMipMaps", boolean.class, param.flip, jsonData);
+        param.flip = json.readValue("flip", boolean.class, param.flip, jsonData);
         param.genMipMaps = json.readValue("genMipMaps", boolean.class, param.genMipMaps, jsonData);
 
         param.magFilter = TextureFilter.valueOf(json.readValue("magFilter", String.class, param.magFilter.name(), jsonData));
