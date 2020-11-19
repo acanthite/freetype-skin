@@ -3,6 +3,8 @@ plugins {
     id 'maven'
 }
 
+ext.gdxVersion = '1.9.12'
+
 group 'com.github.acanthite.gdx'
 version '0.3'
 
@@ -19,8 +21,8 @@ repositories {
 }
 
 dependencies {
-    implementation "com.badlogicgames.gdx:gdx:1.9.+"
-    implementation "com.badlogicgames.gdx:gdx-freetype:1.9.+"
+    implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
