@@ -13,7 +13,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.acanthite:freetype-skin:0.3'
+    implementation 'com.github.acanthite:freetype-skin:0.4'
 }
 ```
 
